@@ -1,0 +1,185 @@
+#main-container {
+    perspective: 400px;
+    position: relative;
+    width: 300px;
+    height: 220px;
+    margin: 80px auto;
+}
+
+#tile-container {
+    transform: translateZ(-300px) rotate3d(0, 1, 0, 0deg);
+    transform-style: preserve-3d;
+    animation-name: carousel-animation;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    
+}
+
+.tile {
+    width: 300px;
+    height: 220px;
+    border-radius: 8px;
+    position: absolute;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    opacity: 0.95;
+}
+
+#tile-1 {
+    background-image: url(./Img/pexels-inge-wallumrød-177809.jpg);
+    background-color: white;
+    transform: rotateY(0deg) translateZ(300px);
+}
+
+#tile-2 {
+    background-image: url(./Img/pexels-katarzyna-modrzejewska-1314550.jpg);
+    background-color: black;
+    transform: rotateY(72deg) translateZ(300px);
+}
+
+#tile-3 {
+    background-image: url(./Img/pexels-kelvin-valerio-617278.jpg);
+    background-color: black;
+    transform: rotateY(144deg) translateZ(300px);
+}
+
+#tile-4 {
+    background-image: url(./Img/pexels-pixabay-45201.jpg);
+    background-color: #E8BF1C;
+    transform: rotateY(216deg) translateZ(300px);
+}
+
+#tile-5 {
+    background-image: url(./Img/pexels-wojciech-kumpicki-2071873.jpg);
+    background-color: black;
+    transform: rotateY(288deg) translateZ(300px);
+}
+
+                /* Tiles rotation */
+
+
+@keyframes carousel-animation {
+    0% {
+            transform: translateZ(-300px) rotate3d(0, 1, 0, 0deg);
+        }
+    
+        20% {
+            transform: translateZ(-300px) rotate3d(0, 1, 0, 72deg);
+        }
+    
+        40% {
+            transform: translateZ(-300px) rotate3d(0, 1, 0, 144deg);
+        }
+    
+        60% {
+            transform: translateZ(-300px) rotate3d(0, 1, 0, 216deg);
+        }
+        80% {
+            transform: translateZ(-300px) rotate3d(0, 1, 0, 288deg);
+                }
+        100% {
+            transform: translateZ(-300px) rotate3d(0, 1, 0, 360deg);
+                }
+        
+    
+}
+
+
+
+
+
+
+
+
+
+/* Animation */
+
+/* .box {
+    background: coral;
+    padding: 10px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    transition: opacity 1.5s;
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}
+
+.box:hover {
+    opacity: 0;
+} */
+
+/* #box {
+    width: 250px;
+        height: 180px;
+        border-radius: 8px;
+        position: absolute;
+        margin: 0 auto;
+        background-image: url("./Logo/heart-clipart-black-and-white-27655.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 64px;
+        background-color: #914E67;
+        animation-name: my-animation;
+        animation-duration: 3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+
+}
+
+@keyframes my-animation {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+        width: 250px;
+        height: 180px;
+       
+    }
+    33% {
+        transform: translateX(0px) rotate(360deg);
+            width: 250px;
+            height: 180px;
+            
+    }
+    66% {
+        transform: translateX(300px, 50px) rotate(360deg);
+            width: 100px;
+            height: 75px;
+            
+    }
+    100% {
+        transform: translateX(0px) rotate(0deg);
+            width: 250px;
+            height: 180px;
+            
+    }
+}
+
+img {
+    width: 64px;
+    height: 64px;
+    animation-name: img-animation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+        
+}
+
+@keyframes img-animation {
+    0%{
+        transform: rotateY(0deg);
+    }
+    33%{
+        transform: rotateY(3600deg);
+    }
+    66%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+} */
